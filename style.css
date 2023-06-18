@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Garamond, sans-serif;
+  color: #eee;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+header {
+  position: relative;
+  height: 25vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 20vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.random_container {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  height: 12rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2.5rem;
+  font-family: inherit;
+  padding: 3rem 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.spells {
+  font-size: 1.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 6rem;
+  background-color: #222;
+  color: #eee;
+  border: none;
+}
+
+.spells:hover {
+  color: #634343;
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 50%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  overflow: scroll;
+  padding: 6rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+
+.spell_name {
+  color: #333;
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spell_descr {
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+  .spells {
+    width: 25%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 720px) {
+  .spells {
+    width: 33%;
+  }
+}
+@media (max-width: 720px) and (min-width: 480px) {
+  .spells {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  .spells {
+    width: 100%;
+  }
+}
